@@ -1,0 +1,64 @@
+{
+  "months": [
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07"
+  ],
+  "train_months": [
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03"
+  ],
+  "val_months": [
+    "2023-04",
+    "2023-05"
+  ],
+  "test_months": [
+    "2023-06",
+    "2023-07"
+  ],
+  "train_size": 16000,
+  "val_size": 4000,
+  "test_size": 4000,
+  "hashes": {
+    "train": "1c8a9b8b425bf7dec28ec8243b44dd0dca73f1e8",
+    "val": "3cd82292091ad30d0832b45846b6f077a4f75d34",
+    "test": "a41e0f57468b441b1d01b1ffdc79c7c2817a4527"
+  },
+  "drift_check": {
+    "premium_mean_before_2023_04": 138.5969,
+    "premium_mean_after_2023_04": 145.1098,
+    "difference": 6.5128
+  },
+  "leakage": {
+    "all_features": [
+      "age",
+      "tenure_m",
+      "premium",
+      "coverage",
+      "region",
+      "has_agent",
+      "is_smoker",
+      "dependents",
+      "post_event_payment_holiday"
+    ],
+    "leak_traps": [
+      "post_event_payment_holiday"
+    ],
+    "note": "Exclude 'post_event_payment_holiday' from model features."
+  }
+}

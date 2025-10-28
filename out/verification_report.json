@@ -1,0 +1,38 @@
+{
+  "leakage_guard": "passed",
+  "temporal_integrity": "passed",
+  "counts": {
+    "train": 16000,
+    "val": 4000,
+    "test": 4000
+  },
+  "months": {
+    "train": [
+      "2022-08",
+      "2022-09",
+      "2022-10",
+      "2022-11",
+      "2022-12",
+      "2023-01",
+      "2023-02",
+      "2023-03"
+    ],
+    "val": [
+      "2023-04",
+      "2023-05"
+    ],
+    "test": [
+      "2023-06",
+      "2023-07"
+    ]
+  },
+  "rag_faithfulness": "passed",
+  "lapse_n": 3,
+  "lead_n": 3,
+  "probability_in_prompt": "passed",
+  "determinism": "passed",
+  "n_features": 13,
+  "runtime_seconds": 31.175,
+  "budget_seconds": 300,
+  "runtime": "passed"
+}
